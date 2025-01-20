@@ -8,14 +8,15 @@ type Props = {
 
 const Button = ({ weight, height, text }: Props) => {
     return (
-        <div
+        <button
             style={{
                 width: weight ? `${weight}px` : '158px',
                 height: height ? `${height}px` : '42px'
             }}
-            className={`bg-primary rounded-xl flex justify-center cursor-pointer items-center`}>
+            onClick={() => console.log('Button clicked')} // will add functionality later
+            className={`bg-primary rounded-md flex justify-center cursor-pointer items-center`}>
             <p className="text-gray-50 font-bold">{text}</p>
-        </div>
+        </button>
     )
 }
 
