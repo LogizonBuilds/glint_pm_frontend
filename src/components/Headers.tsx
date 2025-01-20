@@ -29,7 +29,7 @@ const Headers = () => {
               onClick={() => setActivePage(items)}
               className={
                 activePage === items
-                  ? "font-bold text-[#FF0000]"
+                  ? "font-bold text-primary"
                   : inter.className
               }
               href={""}
