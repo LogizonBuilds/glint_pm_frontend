@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import Button from "./Button";
 
 const inter = Inter({ weight: "400" });
 
@@ -29,7 +30,7 @@ const Headers = () => {
               onClick={() => setActivePage(items)}
               className={
                 activePage === items
-                  ? "font-bold text-[#FF0000]"
+                  ? "font-bold text-primary"
                   : inter.className
               }
               href={""}
@@ -39,11 +40,9 @@ const Headers = () => {
           ))}
         </div>
       </div>
-      <div className="W-[20%]">
-        <div className="w-36 h-11 bg-[#FF0000] rounded-xl flex justify-center cursor-pointer items-center">
-          <p className="text-gray-50 font-bold">Login</p>
-        </div>
-      </div>
+      {/* <div className="W-[20%]"> */}
+      <Button text="Login" height={42} weight={158} />
+      {/* </div> */}
     </div>
   );
 };

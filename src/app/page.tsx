@@ -1,12 +1,14 @@
-import Image from "next/image";
-import Headers from "@/components/Headers";
+'use client';
+
 import Hero from "@/components/Hero";
+import Enquiry from "@/components/Enquiry";
+
 
 export default function Home() {
   return (
-    <div className="">
-      <Headers />
+    <>
       <Hero />
-    </div>
+      <Enquiry />
+    </>
   );
 }
