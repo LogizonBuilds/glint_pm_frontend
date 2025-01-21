@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
 
-const Cards = () => {
+type Props = {
+  heading: string;
+  details: string;
+  img: string;
+};
+
+const Cards = (props: Props) => {
   return (
-    <div className='w-1/3 max-h-72'>
-      
+    <div className="w-1/4 ">
+      <div
+        style={{
+          backgroundImage: `url(${props.img})`,
+        }}
+        className="w-full h-72 border"
+      ></div>
+      <div className="w-5/6 m-auto h-72 relative bottom-20 border"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
