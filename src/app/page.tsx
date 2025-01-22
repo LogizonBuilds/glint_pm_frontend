@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import Enquiry from "@/components/Enquiry";
 import WhoWeAre from "@/components/WhoWeAre";
+import Stats from "@/components/Stats";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <WhoWeAre />
+      <Stats />
       <Enquiry />
     </>
   );
