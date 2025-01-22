@@ -18,12 +18,12 @@ const Stats = (props: Props) => {
 
                         <div className='flex'>
                             <div className='mx-4'>
-                                <Image src={'/images/group.png'} alt='group' width={40} height={30} />
+                                <Image src={'/images/group.png'} alt='group' width={40} height={40} />
 
                             </div>
                             <div className='flex flex-col'>
-                                <h1 className='font-inter-700 text-[28px]'>2,245,341</h1>
-                                <p className='text-[16px] font-inter-400'>Rating</p>
+                                <h1 className='font-inter-700 text-[24px]'>2,245,341</h1>
+                                <p className='text-[12px] font-inter-200'>Rating</p>
 
                             </div>
 
@@ -33,8 +33,8 @@ const Stats = (props: Props) => {
                                 <Image src={'/images/project.png'} alt='group' width={40} height={30} />
                             </div>
                             <div className='flex flex-col'>
-                                <h1>5.0</h1>
-                                <p>Rating</p>
+                                <h1 className='font-inter-700 text-[24px]'>2,245,341</h1>
+                                <p className='text-[12px] font-inter-200'>Rating</p>
 
                             </div>
 
@@ -47,8 +47,8 @@ const Stats = (props: Props) => {
                                 <Image src={'/images/hands.png'} alt='group' width={40} height={30} />
                             </div>
                             <div className='flex flex-col'>
-                                <h1>5.0</h1>
-                                <p>Rating</p>
+                                <h1 className='font-inter-700 text-[24px]'>2,245,341</h1>
+                                <p className='text-[12px] font-inter-200'>Rating</p>
 
                             </div>
 
@@ -58,8 +58,8 @@ const Stats = (props: Props) => {
                                 <Image src={'/images/payment.png'} alt='group' width={40} height={30} />
                             </div>
                             <div className='flex flex-col'>
-                                <h1>5.0</h1>
-                                <p>Rating</p>
+                                <h1 className='font-inter-700 text-[24px]'>2,245,341</h1>
+                                <p className='text-[12px] font-inter-200'>Rating</p>
 
                             </div>
 
