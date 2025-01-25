@@ -7,19 +7,19 @@ const inter = Inter({ weight: "500" });
 const WhatWeDo = () => {
   const data = [
     {
-      img: "woman.png",
+      img: "/images/woman.png",
       heading: "Transforming Ideas into Action",
       details:
         "We combine cutting-edge technology with proven project management strategies to help you achieve your goals effortlessly.",
     },
     {
-      img: "hero_bg.png",
+      img: "/images/laptopTwo.png",
       heading: "Innovating the Future of Project Management",
       details:
         "We combine cutting-edge technology with proven project management strategies to help you achieve your goals effortlessly.",
     },
     {
-      img: "hero_bg.png",
+      img: "/images/laptop.png",
       heading: "Empowering teams to achieve more",
       details:
         "We combine cutting-edge technology with proven project management strategies to help you achieve your goals effortlessly.",
