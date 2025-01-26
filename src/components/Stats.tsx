@@ -5,9 +5,9 @@ type Props = {}
 
 const Stats = (props: Props) => {
     return (
-        <div className='h-[310px] bg-[#F5F7FA] py-12 flex justify-center items-center'>
+        <div className='md:h-[310px] h-[400px] bg-[#F5F7FA] py-12 flex justify-center items-center'>
             <div className='grid sm:grid-cols-2 grid-cols-1 sm:gap-36 gap-6'>
-                <div className='items-center'>
+                <div className='items-center sm:mt-0 mt-6'>
                     <h1 className='text-[36px] leading-[44px] '>
                         Helping a local business <br /><strong className='text-secondary'> reinvent itself </strong>
                     </h1>
