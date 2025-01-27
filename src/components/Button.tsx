@@ -6,7 +6,7 @@ type Props = {
     text: string
 }
 
-const Button = ({ weight, height, text }: Props) => {
+const Button = ({ weight, height, text, noBg }: Props) => {
     return (
         <button
             style={{

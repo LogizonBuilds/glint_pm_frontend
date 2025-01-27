@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import HeroAboutUs from "@/components/HeroAboutUs";
 
-type Props = {}
+type Props = {};
 
 const About = (props: Props) => {
-  return (
-    <div>About</div>
-  )
-}
+  return <HeroAboutUs />;
+};
 
-export default About
+export default About;
