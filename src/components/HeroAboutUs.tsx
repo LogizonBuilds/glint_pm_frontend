@@ -1,7 +1,9 @@
 "use client";
-
+import { Inter } from "next/font/google";
 import React from "react";
 import Button from "./Button";
+
+const inter = inter({weight: "400"})
 
 type Props = {};
 
@@ -15,7 +17,7 @@ const HeroAboutUs = (props: Props) => {
         </p>
         <div className="mt-8 flex w-1/3">
           <Button text="Tech Solution" weight={255} height={52} />
-          <Button text="Project Management" weight={255} height={52} />
+          <Button noBg text="Project Management" weight={255} height={52} />
         </div>
       </div>
     </div>
