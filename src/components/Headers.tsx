@@ -10,7 +10,13 @@ const inter = Inter({ weight: "400" });
 
 const Headers = () => {
   const [activePage, setActivePage] = useState("Home");
-  const pageList = ["Home", "About Us", "Services", "Blogs", "Portfolio"];
+  const pageList = [
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/about" },
+    { name: "Services", url: "/services" },
+    { name: "Blogs", url: "/blogs" },
+    { name: "Portfolio", url: "/portfolio" },
+  ];
   return (
     <div className="h-[15vh] w-full flex flex-row border items-center">
       <div className="w-[20%] flex justify-end">
@@ -27,15 +33,15 @@ const Headers = () => {
           {pageList.map((items, index) => (
             <Link
               key={index}
-              onClick={() => setActivePage(items)}
+              onClick={() => setActivePage(items.name)}
               className={
-                activePage === items
+                activePage === items.name
                   ? "font-bold text-primary"
                   : inter.className
               }
-              href={""}
+              href={items.url}
             >
-              {items}
+              {items.name}
             </Link>
           ))}
         </div>
