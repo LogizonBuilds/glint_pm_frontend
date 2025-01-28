@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import HeroServices from "@/components/HeroServices";
 
-type Props = {}
+type Props = {};
 
 const Services = (props: Props) => {
-    return (
-        <div>Services</div>
-    )
-}
+  return (
+    <div>
+      <HeroServices />
+    </div>
+  );
+};
 
-export default Services
+export default Services;
