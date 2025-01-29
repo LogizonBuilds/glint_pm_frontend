@@ -5,16 +5,17 @@ type Props = {
   weight?: number;
   text: string;
   noBg?: boolean;
+  onClick?: () => void;
 };
 
-const Button = ({ weight, height, text, noBg }: Props) => {
+const Button = ({ weight, height, text, noBg, onClick }: Props) => {
   return (
     <button
       style={{
         width: weight ? `${weight}px` : "158px",
         height: height ? `${height}px` : "42px",
       }}
-      onClick={() => console.log("Button clicked")} // will add functionality later
+      onClick={onClick}
       className={
         noBg
           ? `rounded-md flex justify-center cursor-pointer items-center`
