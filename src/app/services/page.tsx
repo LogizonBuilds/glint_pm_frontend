@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import Button from '@/components/Button'
+import CardWithButton from '@/components/CardWithButton'
 
 type Props = {}
 
@@ -27,6 +28,10 @@ const Services = (props: Props) => {
 
                 </h1>
 
+            </div>
+
+            <div className='p-[100px]'>
+                <CardWithButton />
             </div>
         </>
     )
