@@ -10,7 +10,7 @@ const About = (props: Props) => {
     <div>
       <HeroAboutUs />
       <AboutUs />
-      {/* <GrowBusiness /> */}
+      <GrowBusiness />
     </div>
   );
 };
