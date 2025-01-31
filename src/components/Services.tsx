@@ -43,7 +43,7 @@ const ServicesBody = () => {
   ];
 
   return (
-    <div className="h-[175vh] p-14 border w-full">
+    <div className="h-[175vh] pt-14 px-14 w-full">
       <h1 className="font-medium text-3xl">
         We are <span className="text-red-600 font-bold">Dedicated</span> to{" "}
         <br /> serve you all time

@@ -11,16 +11,13 @@ interface iconProps {
 
 type Props = {
   height?: number;
-  weight?: number;
+  weight?: number | string;
   text: string;
   noBg?: boolean;
   borderColor?: string;
   textColor?: string;
   icon?: boolean;
-};
-
-const IconWrapper: React.FC<iconProps> = ({ Icon, size, color }) => {
-  return <Icon size={size} color={color} />;
+  bg?: string;
 };
 
 const Button = ({
@@ -30,11 +27,13 @@ const Button = ({
   noBg,
   borderColor,
   textColor,
+  bg,
   icon,
 }: Props) => {
   return (
     <button
       style={{
+        backgroundColor: bg ? bg : "",
         width: weight ? `${weight}px` : "158px",
         height: height ? `${height}px` : "42px",
         borderColor: borderColor ? borderColor : "",
@@ -43,8 +42,8 @@ const Button = ({
       onClick={() => console.log("Button clicked")} // will add functionality later
       className={
         noBg
-          ? `rounded-md flex cursor-pointer justify-around items-center`
-          : `bg-primary rounded-md flex justify-around cursor-pointer items-center`
+          ? `p-4 rounded-md flex cursor-pointer justify-around items-center`
+          : `p-4 bg-primary rounded-md flex justify-around cursor-pointer items-center`
       }
     >
       <p
