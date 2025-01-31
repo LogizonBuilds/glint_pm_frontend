@@ -18,6 +18,7 @@ type Props = {
   textColor?: string;
   icon?: boolean;
   bg?: string;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -29,6 +30,7 @@ const Button = ({
   textColor,
   bg,
   icon,
+  onClick,
 }: Props) => {
   return (
     <button
@@ -39,7 +41,7 @@ const Button = ({
         borderColor: borderColor ? borderColor : "",
         borderWidth: borderColor ? 1 : 0,
       }}
-      onClick={() => console.log("Button clicked")} // will add functionality later
+      onClick={onClick && onClick} // will add functionality later
       className={
         noBg
           ? `p-4 rounded-md flex cursor-pointer justify-around items-center`
