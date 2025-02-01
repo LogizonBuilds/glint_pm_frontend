@@ -1,10 +1,41 @@
 import React from 'react'
+import Image from 'next/image'
+import Button from './Button'
 
-type Props = {}
+interface Props {
+    imgSrc: string
+    title: string
+    content: string
+    date?: string
+    btnText: string
+}
 
-const CardWithButton = (props: Props) => {
+const CardWithButton = ({ imgSrc, title, content, date, btnText}: Props) => {
     return (
-        <div className='w-[338px] h-[349px] bg-[#F5F7FA] shadow-sm rounded-[10px]'>CardWithButton</div>
+        <div className='h-80 w-[100%] flex flex-col border rounded-md bg-[#F5F7FA] p-4'>
+            <div className="h-[50%] relative flex justify-center">
+              <Image className="rounded-lg " src={imgSrc} alt="it" fill />
+            </div>
+            <div className="h-[40%] relative">
+              <div className="w-full flex justify-between m-2">
+                <h1 className="text-left font-semibold text-[20px]">
+                  {title}
+                </h1>
+                <p className="m-1">{date ? date : ""}</p>
+              </div>
+              <p className="">{content}</p>
+            </div>
+            <div className="h-[10%] relative flex justify-center">
+              <Button
+                text={btnText}
+                textColor="#FF0000"
+                noBg
+                height={30}
+                weight={150}
+                icon
+              />
+            </div>
+        </div>
     )
 }
 
