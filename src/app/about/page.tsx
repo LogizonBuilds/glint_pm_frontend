@@ -1,6 +1,7 @@
 import React from "react";
 import HeroAboutUs from "@/components/HeroAboutUs";
 import AboutUs from "@/components/AboutUs";
+import GrowBusiness from "@/components/GrowBusiness";
 
 type Props = {};
 
@@ -9,6 +10,7 @@ const About = (props: Props) => {
     <div>
       <HeroAboutUs />
       <AboutUs />
+      <GrowBusiness />
     </div>
   );
 };

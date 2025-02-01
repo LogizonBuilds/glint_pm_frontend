@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="h-[110vh] p-14">
       <h1 className="font-medium text-4xl">About Us</h1>
-      <p className="text-left mt-5 font-medium text-3xl">
+      <p className="text-left mt-5 font-medium text-2xl">
         We make sure your idea <br /> & creation delivered <br /> properly
       </p>
 
