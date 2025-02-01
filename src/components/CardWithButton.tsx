@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Button from './Button'
+import Link from 'next/link'
 
 interface Props {
     imgSrc: string
@@ -8,9 +9,10 @@ interface Props {
     content: string
     date?: string
     btnText: string
+    id: number
 }
 
-const CardWithButton = ({ imgSrc, title, content, date, btnText}: Props) => {
+const CardWithButton = ({ imgSrc, title, content, date, btnText, id}: Props) => {
     return (
         <div className='h-80 w-[100%] flex flex-col border rounded-md bg-[#F5F7FA] p-4'>
             <div className="h-[50%] relative flex justify-center">
@@ -26,6 +28,8 @@ const CardWithButton = ({ imgSrc, title, content, date, btnText}: Props) => {
               <p className="">{content}</p>
             </div>
             <div className="h-[10%] relative flex justify-center">
+              <Link href={`/blogs/${id}`}>
+                
               <Button
                 text={btnText}
                 textColor="#FF0000"
@@ -34,6 +38,7 @@ const CardWithButton = ({ imgSrc, title, content, date, btnText}: Props) => {
                 weight={150}
                 icon
               />
+              </Link>
             </div>
         </div>
     )

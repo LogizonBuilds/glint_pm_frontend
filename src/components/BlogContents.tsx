@@ -76,7 +76,7 @@ const BlogContent = () => {
             data.map((item, index) => (
                 <div key={index} className='mb-4 flex justify-center'>
 
-                    <CardWithButton imgSrc={item.img} title={item.title} content={item.content} btnText='Explore'  />
+                    <CardWithButton imgSrc={item.img} title={item.title} content={item.content} btnText='Explore' id={index}  />
                 </div>
             ))
         }
