@@ -16,7 +16,7 @@ const BlogsDetail = () => {
     content: 'This is the content of blog 1',
     author: 'Author 1',
     date: '2021-01-01',
-    image: '/images/blogimg.png"',
+    image: '/images/blogimg.png',
   }
 
   const blogs = [blog, blog, blog]
@@ -24,7 +24,7 @@ const BlogsDetail = () => {
   return (
     <>
     <BlogHero/>
-    <div className='mt-6 p-8'>
+    <div className='mt-6 p-12'>
       <BlogDetailsContent data={blog} blogs={blogs} />
 
     </div>

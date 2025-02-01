@@ -22,7 +22,7 @@ const Headers = () => {
       <div className="w-[20%] flex justify-end">
         <Image
           aria-hidden
-          src="/Glintpm.png"
+          src="/images/Glintpm.png"
           alt="Globe icon"
           width={80}
           height={80}
