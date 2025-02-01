@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "./Button";
+import CardWithButton from "./CardWithButton";
 
 const BlogContent = () => {
   const data = [
@@ -37,8 +38,8 @@ const BlogContent = () => {
   ];
 
   return (
-    <div className="h-[175vh] pt-14 px-14 w-full">
-      <div className="h-3/4 w-full flex justify-around mt-10 flex-wrap">
+    <div className="h-[105vh] pt-10 px-14 w-full">
+      {/* <div className="h-3/4 w-full flex justify-around mt-10 flex-wrap">
         {data.map((items, index) => (
           <div
             key={index}
@@ -68,7 +69,20 @@ const BlogContent = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+      <div className='m-10 grid md:grid-cols-3 grid-cols-1 gap-3 sm:grid-cols-2'>
+        
+        {
+            data.map((item, index) => (
+                <div key={index} className='mb-4 flex justify-center'>
+
+                    <CardWithButton imgSrc={item.img} title={item.title} content={item.content} btnText='Explore'  />
+                </div>
+            ))
+        }
+       
+
+    </div>
     </div>
   );
 };
