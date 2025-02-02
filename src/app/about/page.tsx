@@ -3,9 +3,8 @@ import HeroAboutUs from "@/components/HeroAboutUs";
 import AboutUs from "@/components/AboutUs";
 import GrowBusiness from "@/components/GrowBusiness";
 
-type Props = {};
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <div>
       <HeroAboutUs />

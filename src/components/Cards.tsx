@@ -9,7 +9,7 @@ type Props = {
 
 const Cards = (props: Props) => {
   return (
-    <div className="w-1/4 ">
+    <div className="w-[80%] ">
       <div
         style={{
           backgroundImage: `url(${props.img})`,

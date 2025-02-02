@@ -52,7 +52,7 @@ const Portfolio = () => {
             portfolios.map((item, index) => (
                 <div key={index} className='mb-4 flex justify-center'>
 
-                    <CardWithButton imgSrc={item.img} title={item.title} content={item.content} btnText='Explore'  />
+                    <CardWithButton id={index} imgSrc={item.img} title={item.title} content={item.content} btnText='Explore'  />
                 </div>
             ))
         }
