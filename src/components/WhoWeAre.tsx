@@ -6,7 +6,7 @@ type Props = {}
 function WhoWeAre({ }: Props) {
     return (
         <>
-            <div className='text-center flex justify-center items-center py-12 px-12'>
+            <div className='text-center flex justify-center items-center py-6 px-12'>
                 <h1 className='text-[48px] font-inter-800 font-bold'>Who We Are</h1>
 
             </div>

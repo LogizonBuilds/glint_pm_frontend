@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Button from "./Button";
 import CardWithButton from "./CardWithButton";
 
 const BlogContent = () => {

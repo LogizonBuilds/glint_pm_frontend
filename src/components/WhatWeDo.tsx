@@ -27,18 +27,20 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <div className="h-[100vh] w-full flex flex-col">
-      <div className="h-1/6 flex justify-center items-center">
+    <div className="w-full flex flex-col">
+      <div className="h-1/6 flex p-12 justify-center items-center">
         <h1 className="font-inter-800 font-extrabold text-5xl">What We Do</h1>
       </div>
-      <div className="w-full h-5/6 flex justify-around">
+      <div className="h-5/6 grid grid-cols-1 ps-24 gap-2 sm:grid-cols-2 md:grid-cols-3">
         {data.map((items, index) => (
-          <Cards
-            key={index}
-            heading={items.heading}
-            details={items.details}
-            img={items.img}
-          />
+          <div key={index} className="w-full">
+            <Cards
+              key={index}
+              heading={items.heading}
+              details={items.details}
+              img={items.img}
+            />
+          </div>
         ))}
       </div>
     </div>
