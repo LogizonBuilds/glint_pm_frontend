@@ -24,18 +24,18 @@ const GrowBusiness = () => {
   ];
 
   return (
-    <div className="h-[100vh] w-full p-14">
+    <div className="mb-12 w-full px-14">
       <h1 className="font-medium text-3xl">
         We help business to <br /> grow faster & bigger
       </h1>
-      <div className="w-full flex h-[65vh] pt-10 justify-between">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 pt-10">
         {data.map((items, index) => (
           <div
             style={{
               boxShadow: "0px 2px 2px 2px rgba(114, 108, 108, 0.1)",
             }}
             key={index}
-            className="w-[32%] h-full rounded-xl"
+            className="w-full rounded-xl"
           >
             <div className="h-[40%] pt-5 flex justify-center">
               <Image
