@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Appointment = () => {
   return (
-    <div className="relative bottom-20">
+    <div className="mt-16">
       <div className="h-[30vh] bg-[#FF0000] rounded-lg w-[75%] mx-auto mb-28 flex">
         <div className="w-1/12 flex justify-center items-center">
           <div className="w-[50px] h-[50px] rounded-[25px] bg-gray-50 flex justify-center items-center">
